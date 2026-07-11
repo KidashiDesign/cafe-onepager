@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Café Mira — Handwerkskaffee & Frühstück in Berlin-Mitte</title>
-<meta name="description" content="Café Mira in Berlin-Mitte: Spezialitätenkaffee, hausgemachtes Frühstück und Kuchen. Täglich geöffnet ab 8 Uhr. Jetzt Tisch reservieren.">
-<meta name="keywords" content="Café Berlin, Kaffee, Frühstück, Brunch, Specialty Coffee, Café Mitte">
+<title>Café Mira — Specialty Coffee & Breakfast in Berlin-Mitte</title>
+<meta name="description" content="Café Mira in Berlin-Mitte: specialty coffee, house-made breakfast and cake, live music nights. Open daily from 8am. Reserve your table today.">
+<meta name="keywords" content="café Berlin, specialty coffee, breakfast, brunch, coffee shop Mitte">
 <meta name="author" content="Café Mira">
 <link rel="canonical" href="https://www.cafe-mira.example/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="restaurant.menu">
-<meta property="og:title" content="Café Mira — Handwerkskaffee & Frühstück in Berlin-Mitte">
-<meta property="og:description" content="Spezialitätenkaffee, hausgemachtes Frühstück und Kuchen mitten in Berlin. Jetzt Tisch reservieren.">
+<meta property="og:title" content="Café Mira — Specialty Coffee & Breakfast in Berlin-Mitte">
+<meta property="og:description" content="Specialty coffee, house-made breakfast and cake right in the middle of Berlin. Reserve your table today.">
 <meta property="og:image" content="images/og-cover.jpg">
-<meta property="og:locale" content="de_DE">
+<meta property="og:locale" content="en_GB">
 <meta property="og:url" content="https://www.cafe-mira.example/">
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Café Mira — Handwerkskaffee & Frühstück">
-<meta name="twitter:description" content="Spezialitätenkaffee, hausgemachtes Frühstück und Kuchen in Berlin-Mitte.">
+<meta name="twitter:title" content="Café Mira — Specialty Coffee & Breakfast">
+<meta name="twitter:description" content="Specialty coffee, house-made breakfast and cake in Berlin-Mitte.">
 <meta name="twitter:image" content="images/og-cover.jpg">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
@@ -38,7 +38,7 @@
   "image": "https://www.cafe-mira.example/images/og-cover.jpg",
   "url": "https://www.cafe-mira.example/",
   "telephone": "+49-30-1234567",
-  "servesCuisine": "Café, Frühstück, Kuchen",
+  "servesCuisine": "Café, Breakfast, Cake",
   "priceRange": "€€",
   "address": {
     "@type": "PostalAddress",
@@ -53,33 +53,38 @@
     { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday","Sunday"], "opens": "09:00", "closes": "20:00" }
   ],
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "312" },
-  "sameAs": ["https://www.instagram.com/cafemira", "https://www.facebook.com/cafemira"]
+  "sameAs": ["https://www.instagram.com/cafemira", "https://www.facebook.com/cafemira"],
+  "inLanguage": "en"
 }
 </script>
 </head>
 <body>
 
 <!-- Cookie consent (GDPR / EU market) -->
-<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis">
-  <p>Wir verwenden Cookies, um dir die beste Erfahrung auf unserer Website zu bieten. <a href="datenschutz.html">Mehr erfahren</a></p>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie notice">
+  <p>We use cookies to give you the best experience on our website. <a href="privacy.html">Learn more</a></p>
   <div class="cookie-actions">
-    <button class="btn btn--ghost" id="cookieDecline">Nur notwendige</button>
-    <button class="btn btn--primary" id="cookieAccept">Akzeptieren</button>
+    <button class="btn btn--ghost" id="cookieDecline">Necessary only</button>
+    <button class="btn btn--primary" id="cookieAccept">Accept</button>
   </div>
 </div>
 
 <!-- Nav -->
 <header class="nav" id="nav">
-  <a href="#top" class="nav__logo">Café <span>Mira</span></a>
+  <a href="#top" class="nav__logo">
+    <span class="nav__logo-mark">
+      <svg viewBox="0 0 48 48" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/><path d="M16 10c0 2 2 2 2 4M23 10c0 2 2 2 2 4"/></svg>
+    </span>
+    Café Mira
+  </a>
   <nav class="nav__links" id="navLinks">
-    <a href="#about">Über uns</a>
-    <a href="#menu">Speisekarte</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#reviews">Bewertungen</a>
-    <a href="#location">Standort</a>
-    <a href="#contact" class="btn btn--primary btn--sm">Tisch reservieren</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#shop">Shop</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn btn--primary btn--sm">Reserve a Table</a>
   </nav>
-  <button class="nav__burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false">
+  <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 </header>
@@ -87,179 +92,378 @@
 <!-- Hero -->
 <section class="hero" id="top">
   <div class="hero__bg" aria-hidden="true"></div>
+  <svg class="leaf leaf--left float" viewBox="0 0 100 60" width="72" aria-hidden="true"><path d="M2 58C2 20 40 2 98 2 C74 34 42 54 2 58Z" fill="#5C7A4A"/><path d="M6 54C30 30 55 14 92 6" stroke="#3E5A32" stroke-width="2" fill="none"/></svg>
+  <svg class="leaf leaf--right float" viewBox="0 0 100 60" width="72" aria-hidden="true"><path d="M98 58C98 20 60 2 2 2 C26 34 58 54 98 58Z" fill="#5C7A4A"/><path d="M94 54C70 30 45 14 8 6" stroke="#3E5A32" stroke-width="2" fill="none"/></svg>
+
   <div class="hero__content">
-    <p class="eyebrow">Berlin-Mitte · seit 2019</p>
-    <h1>Kaffee, der<br><em>langsamer</em> macht.</h1>
-    <p class="hero__lede">Spezialitätenkaffee, hausgemachtes Frühstück und Kuchen — mitten in der Stadt, aber ganz für dich.</p>
-    <div class="hero__cta">
-      <a href="#contact" class="btn btn--primary btn--lg">Tisch reservieren</a>
-      <a href="#menu" class="btn btn--ghost btn--lg">Speisekarte ansehen</a>
+    <p class="eyebrow reveal">Berlin-Mitte · Est. 2019</p>
+    <h1 class="hero__title">
+      <span class="word" style="--i:0">Discover</span>
+      <span class="word" style="--i:1">the</span>
+      <span class="word" style="--i:2">perfect</span>
+      <span class="word" style="--i:3">blend</span><br>
+      <span class="word" style="--i:4">of</span>
+      <span class="word" style="--i:5"><em>taste</em></span>
+      <span class="word" style="--i:6">and</span>
+      <span class="word" style="--i:7">ambiance.</span>
+    </h1>
+    <p class="hero__lede reveal" style="--i:1">Specialty coffee, house-made breakfast and cake — right in the middle of the city, all just for you.</p>
+    <div class="hero__cta reveal" style="--i:2">
+      <a href="#menu" class="btn btn--primary btn--lg">Explore Our Menu</a>
+      <a href="#contact" class="btn btn--ghost btn--lg">Reserve a Table</a>
     </div>
-    <div class="hero__trust">
-      <span>★★★★★ 4.8/5</span><span>·</span><span>312 Google-Bewertungen</span>
+    <div class="hero__trust reveal" style="--i:3">
+      <span>★★★★★ 4.8/5</span><span>·</span><span>312 Google reviews</span>
+    </div>
+
+    <div class="hero__media reveal" style="--i:4">
+      <div class="hero__scene" id="heroScene">
+        <span class="steam s1"></span><span class="steam s2"></span><span class="steam s3"></span>
+      </div>
+      <button class="hero__playbtn" id="heroPlayBtn" aria-label="Pause ambience animation" aria-pressed="true">
+        <svg id="iconPause" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+        <svg id="iconPlay" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" hidden><path d="M8 5v14l11-7L8 5Z"/></svg>
+      </button>
     </div>
   </div>
-  <a href="#about" class="hero__scroll" aria-label="Nach unten scrollen">↓</a>
+  <a href="#quote" class="hero__scroll" aria-label="Scroll down">↓</a>
 </section>
 
-<!-- Social proof strip -->
-<section class="strip">
-  <div class="strip__item"><strong>100%</strong><span>Fair-Trade Bohnen</span></div>
-  <div class="strip__item"><strong>täglich</strong><span>frisch gebacken</span></div>
-  <div class="strip__item"><strong>4.8★</strong><span>312 Bewertungen</span></div>
-  <div class="strip__item"><strong>seit 2019</strong><span>in Berlin-Mitte</span></div>
+<!-- Quote band -->
+<section class="quote" id="quote">
+  <svg class="bean-icon float" viewBox="0 0 64 64" width="34" height="34" aria-hidden="true"><ellipse cx="32" cy="32" rx="22" ry="29" fill="#EFC13A"/><path d="M32 6C19 19,19 45,32 58" stroke="#4A1210" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+  <p class="quote__text reveal">Café Mira started with a simple idea: to create a space where people can enjoy <span class="pill">great coffee</span> and even better company.</p>
+  <p class="quote__sub reveal" style="--i:1">We source thoughtfully, roast in small batches, and bake fresh every single day.</p>
+</section>
+
+<!-- Marquee ticker -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Live acoustic sessions every Friday &amp; Saturday night</span>
+    <span>New in: our Brown Butter Croissant, baked fresh each morning</span>
+    <span>100% direct-trade beans, roasted in small batches</span>
+    <span>Now booking private events — ask our team for details</span>
+    <span>Live acoustic sessions every Friday &amp; Saturday night</span>
+    <span>New in: our Brown Butter Croissant, baked fresh each morning</span>
+    <span>100% direct-trade beans, roasted in small batches</span>
+    <span>Now booking private events — ask our team for details</span>
+  </div>
+</div>
+
+<!-- Featured menu -->
+<section class="menu" id="menu">
+  <div class="menu__card">
+    <svg class="bean-icon bean-icon--sm" viewBox="0 0 64 64" width="26" height="26" aria-hidden="true"><ellipse cx="32" cy="32" rx="22" ry="29" fill="#4A1210"/><path d="M32 6C19 19,19 45,32 58" stroke="#EFC13A" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+    <p class="eyebrow center reveal">Menu</p>
+    <h2 class="center reveal">Featured menu items</h2>
+
+    <div class="menu__grid">
+      <div class="menu-card reveal" style="--i:0">
+        <span class="menu-card__icon"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/></svg></span>
+        <span class="menu-card__body">
+          <span class="menu-card__top"><span class="menu-card__name">Cold Brew</span><span class="menu-card__price">€4.80</span></span>
+          <span class="menu-card__desc">Steeped slow for 18 hours, silky smooth</span>
+        </span>
+      </div>
+      <div class="menu-card reveal" style="--i:1">
+        <span class="menu-card__icon menu-card__icon--food"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><path d="M16 16v8M20 16v8M16 20h4M24 32V16M24 16c3 0 5 2 5 5s-2 5-5 5"/></svg></span>
+        <span class="menu-card__body">
+          <span class="menu-card__top"><span class="menu-card__name">Grilled Cheese</span><span class="menu-card__price">€6.50</span></span>
+          <span class="menu-card__desc">Melted cheese on toasted sourdough</span>
+        </span>
+      </div>
+      <div class="menu-card reveal" style="--i:2">
+        <span class="menu-card__icon menu-card__icon--food"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><path d="M16 16v8M20 16v8M16 20h4M24 32V16M24 16c3 0 5 2 5 5s-2 5-5 5"/></svg></span>
+        <span class="menu-card__body">
+          <span class="menu-card__top"><span class="menu-card__name">Chocolate Cake</span><span class="menu-card__price">€5.20</span></span>
+          <span class="menu-card__desc">Rich, moist, and unapologetically chocolatey</span>
+        </span>
+      </div>
+      <div class="menu-card reveal" style="--i:3">
+        <span class="menu-card__icon"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/></svg></span>
+        <span class="menu-card__body">
+          <span class="menu-card__top"><span class="menu-card__name">Flat White</span><span class="menu-card__price">€4.20</span></span>
+          <span class="menu-card__desc">Velvety microfoam over double espresso</span>
+        </span>
+      </div>
+      <div class="menu-card reveal" style="--i:4">
+        <span class="menu-card__icon"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/></svg></span>
+        <span class="menu-card__body">
+          <span class="menu-card__top"><span class="menu-card__name">Espresso</span><span class="menu-card__price">€3.20</span></span>
+          <span class="menu-card__desc">Our house blend, deep and bold</span>
+        </span>
+      </div>
+      <div class="menu-card reveal" style="--i:5">
+        <span class="menu-card__icon"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/></svg></span>
+        <span class="menu-card__body">
+          <span class="menu-card__top"><span class="menu-card__name">Matcha Latte</span><span class="menu-card__price">€4.80</span></span>
+          <span class="menu-card__desc">Ceremonial-grade matcha, whisked to order</span>
+        </span>
+      </div>
+      <div class="menu-card reveal" style="--i:6">
+        <span class="menu-card__icon menu-card__icon--food"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><path d="M16 16v8M20 16v8M16 20h4M24 32V16M24 16c3 0 5 2 5 5s-2 5-5 5"/></svg></span>
+        <span class="menu-card__body">
+          <span class="menu-card__top"><span class="menu-card__name">Caesar Salad</span><span class="menu-card__price">€7.90</span></span>
+          <span class="menu-card__desc">Crisp romaine, parmesan, house dressing</span>
+        </span>
+      </div>
+      <div class="menu-card reveal" style="--i:7">
+        <span class="menu-card__icon menu-card__icon--food"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><path d="M16 16v8M20 16v8M16 20h4M24 32V16M24 16c3 0 5 2 5 5s-2 5-5 5"/></svg></span>
+        <span class="menu-card__body">
+          <span class="menu-card__top"><span class="menu-card__name">Almond Croissant</span><span class="menu-card__price">€4.40</span></span>
+          <span class="menu-card__desc">Buttery layers, filled with almond cream</span>
+        </span>
+      </div>
+    </div>
+
+    <p class="center reveal" style="margin-top:2.5rem;"><a href="#menu" class="btn btn--primary">View Full Menu</a></p>
+  </div>
 </section>
 
 <!-- About -->
 <section class="about" id="about">
-  <div class="about__media" aria-hidden="true"></div>
+  <div class="about__media reveal" aria-hidden="true"></div>
   <div class="about__text">
-    <p class="eyebrow">Unsere Geschichte</p>
-    <h2>Ein Zuhause für Kaffeeliebhaber</h2>
-    <p>Café Mira wurde 2019 aus einer einfachen Idee geboren: guter Kaffee sollte Zeit haben. Wir rösten in kleinen Chargen, arbeiten direkt mit Farmern zusammen und backen jeden Morgen frisch. Kommt vorbei, bleibt sitzen, lest ein Buch — wir freuen uns auf euch.</p>
+    <p class="eyebrow reveal">Our Story</p>
+    <h2 class="reveal" style="--i:1">A home for coffee lovers</h2>
+    <p class="reveal" style="--i:2">Café Mira was born in 2019 from a simple idea: good coffee should have time. We roast in small batches, work directly with farmers, and bake fresh every morning. Come in, stay a while, read a book — we're glad you're here.</p>
     <ul class="about__facts">
-      <li>Direct-Trade-Kaffee aus Äthiopien &amp; Kolumbien</li>
-      <li>Vegane &amp; glutenfreie Optionen täglich</li>
-      <li>Hundefreundlich &amp; ruhige Arbeitsplätze</li>
+      <li class="reveal" style="--i:3">Direct-trade coffee from Ethiopia &amp; Colombia</li>
+      <li class="reveal" style="--i:4">Vegan &amp; gluten-free options daily</li>
+      <li class="reveal" style="--i:5">Dog-friendly &amp; quiet corners to work</li>
     </ul>
   </div>
 </section>
 
-<!-- Menu -->
-<section class="menu" id="menu">
-  <p class="eyebrow center">Speisekarte</p>
-  <h2 class="center">Kleine Karte, große Liebe</h2>
-  <div class="menu__grid">
-    <div class="menu__col">
-      <h3>Kaffee</h3>
-      <div class="menu__row"><span>Espresso</span><span class="dots"></span><span>3,20 €</span></div>
-      <div class="menu__row"><span>Flat White</span><span class="dots"></span><span>4,20 €</span></div>
-      <div class="menu__row"><span>Cappuccino</span><span class="dots"></span><span>3,80 €</span></div>
-      <div class="menu__row"><span>Filterkaffee, V60</span><span class="dots"></span><span>4,50 €</span></div>
-      <div class="menu__row"><span>Matcha Latte</span><span class="dots"></span><span>4,80 €</span></div>
+<!-- Upcoming events -->
+<section class="events">
+  <div class="events__head">
+    <div>
+      <p class="eyebrow reveal">What's on</p>
+      <h2 class="reveal" style="--i:1">Upcoming events</h2>
     </div>
-    <div class="menu__col">
-      <h3>Frühstück &amp; Kuchen</h3>
-      <div class="menu__row"><span>Avocado-Sourdough</span><span class="dots"></span><span>9,50 €</span></div>
-      <div class="menu__row"><span>Shakshuka</span><span class="dots"></span><span>10,90 €</span></div>
-      <div class="menu__row"><span>Overnight Oats (vegan)</span><span class="dots"></span><span>7,50 €</span></div>
-      <div class="menu__row"><span>Zitronen-Olivenöl-Kuchen</span><span class="dots"></span><span>4,90 €</span></div>
-      <div class="menu__row"><span>Karottenkuchen</span><span class="dots"></span><span>5,20 €</span></div>
+    <div class="events__nav">
+      <button class="round-btn" id="eventsPrev" aria-label="Previous event">‹</button>
+      <button class="round-btn" id="eventsNext" aria-label="Next event">›</button>
     </div>
   </div>
-  <p class="menu__note">Vollständige Karte inkl. Allergeninfos vor Ort &amp; per PDF.</p>
+
+  <div class="events__track" id="eventsTrack">
+    <article class="event-card reveal" style="--i:0">
+      <div class="event-card__media"></div>
+      <p class="event-card__date">Sat, Aug 8, 2026</p>
+      <h3>Coffee Art Workshop</h3>
+      <p>Learn the basics of latte art with our head barista over a relaxed morning session.</p>
+      <a href="#contact" class="link-arrow">Learn more →</a>
+    </article>
+    <article class="event-card reveal" style="--i:1">
+      <div class="event-card__media event-card__media--b"></div>
+      <p class="event-card__date">Fri, Aug 14, 2026</p>
+      <h3>Live Music Friday</h3>
+      <p>Acoustic sessions from local artists, every second Friday of the month.</p>
+      <a href="#contact" class="link-arrow">Learn more →</a>
+    </article>
+    <article class="event-card reveal" style="--i:2">
+      <div class="event-card__media event-card__media--c"></div>
+      <p class="event-card__date">Fri, Aug 21, 2026</p>
+      <h3>Community Open Mic</h3>
+      <p>Bring a poem, a song, or just your best listening ears.</p>
+      <a href="#contact" class="link-arrow">Learn more →</a>
+    </article>
+  </div>
+
+  <div class="stats">
+    <div class="stats__item reveal" style="--i:0"><strong>12K</strong><span>Happy Customers</span></div>
+    <div class="stats__item reveal" style="--i:1"><strong>7+</strong><span>Years of Service</span></div>
+    <div class="stats__item reveal" style="--i:2"><strong>100+</strong><span>Daily Visitors</span></div>
+  </div>
 </section>
 
 <!-- Gallery -->
 <section class="gallery" id="gallery">
-  <p class="eyebrow center">Impressionen</p>
-  <h2 class="center">Ein Blick ins Café</h2>
-  <div class="gallery__grid">
-    <div class="gallery__item gallery__item--a"></div>
-    <div class="gallery__item gallery__item--b"></div>
-    <div class="gallery__item gallery__item--c"></div>
-    <div class="gallery__item gallery__item--d"></div>
-    <div class="gallery__item gallery__item--e"></div>
+  <p class="eyebrow center reveal">Gallery</p>
+  <h2 class="center reveal" style="--i:1">A look inside the café</h2>
+  <div class="gallery__row">
+    <div class="gallery__item gallery__item--a reveal" style="--i:0"></div>
+    <div class="gallery__item gallery__item--b reveal" style="--i:1"></div>
+    <div class="gallery__item gallery__item--c reveal" style="--i:2"></div>
+    <div class="gallery__item gallery__item--d reveal" style="--i:3"></div>
+    <div class="gallery__item gallery__item--e reveal" style="--i:4"></div>
   </div>
 </section>
 
-<!-- Reviews -->
+<!-- Testimonials -->
 <section class="reviews" id="reviews">
-  <p class="eyebrow center">Was Gäste sagen</p>
-  <h2 class="center">312 Bewertungen, 4.8★ im Schnitt</h2>
-  <div class="reviews__grid">
-    <blockquote class="review">
-      <p>„Bester Flat White in Mitte, und das Frühstück ist jedes Mal ein Highlight.“</p>
-      <cite>— Lena K., Google</cite>
-    </blockquote>
-    <blockquote class="review">
-      <p>„Ruhige Ecke zum Arbeiten, super WLAN, freundliches Team.“</p>
-      <cite>— Tomás R., Google</cite>
-    </blockquote>
-    <blockquote class="review">
-      <p>„Der Zitronenkuchen ist Kult. Komme jede Woche vorbei.“</p>
-      <cite>— Anna S., Google</cite>
-    </blockquote>
+  <p class="eyebrow center reveal">Reviews</p>
+  <h2 class="center reveal" style="--i:1">312 reviews, 4.8★ on average</h2>
+  <div class="testimonial">
+    <button class="round-btn" id="testimonialPrev" aria-label="Previous review">‹</button>
+    <div class="testimonial__body">
+      <p class="testimonial__stars">★★★★★</p>
+      <p class="testimonial__quote" id="testimonialQuote">"Café Mira has become my go-to spot for my daily coffee fix. The espresso is consistently rich and flavorful, and the baristas are true artists."</p>
+      <p class="testimonial__name" id="testimonialName">— Sarah M.</p>
+      <p class="testimonial__role" id="testimonialRole">A Coffee Lover's Paradise</p>
+    </div>
+    <button class="round-btn" id="testimonialNext" aria-label="Next review">›</button>
+  </div>
+</section>
+
+<!-- Discover our coffee -->
+<section class="discover">
+  <div class="discover__media reveal" aria-hidden="true"></div>
+  <div class="discover__text">
+    <p class="eyebrow reveal">Behind the counter</p>
+    <h2 class="reveal" style="--i:1">Discover our coffee</h2>
+    <ul class="feature-list">
+      <li class="reveal" style="--i:2">
+        <span class="feature-list__icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21c6-1 9-4 9-10S10 3 4 3c0 8 2 13 0 18Z"/></svg></span>
+        <span><strong>Local Ingredients</strong><br>Produce and dairy sourced from small farms within 100km of Berlin.</span>
+      </li>
+      <li class="reveal" style="--i:3">
+        <span class="feature-list__icon"><svg viewBox="0 0 64 64" width="18" height="18" aria-hidden="true"><ellipse cx="32" cy="32" rx="20" ry="27" fill="currentColor"/></svg></span>
+        <span><strong>Crafted Coffee</strong><br>Beans roasted in-house every week for peak freshness.</span>
+      </li>
+      <li class="reveal" style="--i:4">
+        <span class="feature-list__icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8.5a15 15 0 0 1 20 0"/><path d="M5.5 12a10 10 0 0 1 13 0"/><path d="M9 15.5a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/></svg></span>
+        <span><strong>Free Wi-Fi</strong><br>Stay a while — fast, free Wi-Fi at every table.</span>
+      </li>
+    </ul>
+    <div class="discover__cta reveal" style="--i:5">
+      <a href="#menu" class="btn btn--primary">View Menu</a>
+      <a href="#contact" class="link-arrow">Talk to our baristas →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Reservation -->
+<section class="contact" id="contact">
+  <div class="contact__media reveal" aria-hidden="true"></div>
+  <div class="contact__form-wrap">
+    <p class="eyebrow reveal">Reservation</p>
+    <h2 class="reveal" style="--i:1">Make a Reservation</h2>
+    <form class="contact__form reveal" style="--i:2" id="reserveForm" novalidate>
+      <div class="field-row">
+        <label>Name<input type="text" name="name" required autocomplete="name"></label>
+        <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      </div>
+      <div class="field-row">
+        <label>Date<input type="date" name="date" required></label>
+        <label>Time<input type="time" name="time" required></label>
+        <label>Guests<input type="number" name="guests" min="1" max="12" value="2" required></label>
+      </div>
+      <label class="field-full">Message (optional)<textarea name="message" rows="3"></textarea></label>
+      <label class="consent">
+        <input type="checkbox" name="privacy" required>
+        I agree to the <a href="privacy.html">Privacy Policy</a>.
+      </label>
+      <button type="submit" class="btn btn--primary btn--lg">Request Reservation</button>
+      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- Signature items / shop -->
+<section class="shop" id="shop">
+  <p class="eyebrow center reveal">Take Home</p>
+  <h2 class="center reveal" style="--i:1">Our signature items</h2>
+  <div class="shop__grid">
+    <div class="shop-card reveal" style="--i:0">
+      <div class="shop-card__media"></div>
+      <h3>Signature Ground Coffee</h3>
+      <p class="shop-card__price">€14.90</p>
+    </div>
+    <div class="shop-card reveal" style="--i:1">
+      <div class="shop-card__media shop-card__media--b"><span class="badge">Sale 15%</span></div>
+      <h3>Decaf Blend</h3>
+      <p class="shop-card__price"><span class="was">€15.90</span> €13.50</p>
+    </div>
+    <div class="shop-card reveal" style="--i:2">
+      <div class="shop-card__media shop-card__media--c"></div>
+      <h3>Espresso Beans</h3>
+      <p class="shop-card__price">€16.90</p>
+    </div>
+    <div class="shop-card reveal" style="--i:3">
+      <div class="shop-card__media shop-card__media--d"><span class="badge badge--gold">Best Pick</span></div>
+      <h3>Homemade Chai Mix</h3>
+      <p class="shop-card__price">€10.90</p>
+    </div>
   </div>
 </section>
 
 <!-- Location & hours -->
 <section class="location" id="location">
   <div class="location__info">
-    <p class="eyebrow">Besucht uns</p>
-    <h2>Standort &amp; Öffnungszeiten</h2>
-    <p class="location__address">Torstraße 12, 10119 Berlin</p>
-    <table class="hours">
-      <tr><td>Montag – Freitag</td><td>08:00 – 19:00</td></tr>
-      <tr><td>Samstag – Sonntag</td><td>09:00 – 20:00</td></tr>
+    <p class="eyebrow reveal">Visit us</p>
+    <h2 class="reveal" style="--i:1">Location &amp; opening hours</h2>
+    <p class="location__address reveal" style="--i:2">Torstraße 12, 10119 Berlin</p>
+    <table class="hours reveal" style="--i:3">
+      <tr><td>Monday – Friday</td><td>08:00 – 19:00</td></tr>
+      <tr><td>Saturday – Sunday</td><td>09:00 – 20:00</td></tr>
     </table>
-    <div class="location__actions">
+    <div class="location__actions reveal" style="--i:4">
       <a class="btn btn--primary" href="tel:+493012345678">+49 30 123 45 678</a>
-      <a class="btn btn--ghost" href="https://maps.google.com/?q=Torstraße+12+Berlin" target="_blank" rel="noopener">Route planen</a>
+      <a class="btn btn--ghost" href="https://maps.google.com/?q=Torstraße+12+Berlin" target="_blank" rel="noopener">Get Directions</a>
     </div>
   </div>
-  <div class="location__map" aria-hidden="true">
-    <iframe title="Café Mira Standort" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+  <div class="location__map reveal" style="--i:2" aria-hidden="true">
+    <iframe title="Café Mira location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
       src="https://maps.google.com/maps?q=Torstra%C3%9Fe%2012%2C%20Berlin&t=&z=15&ie=UTF8&iwloc=&output=embed">
     </iframe>
   </div>
 </section>
 
-<!-- Reservation / contact -->
-<section class="contact" id="contact">
-  <div class="contact__inner">
-    <p class="eyebrow">Reservierung</p>
-    <h2>Sichert euch einen Tisch</h2>
-    <form class="contact__form" id="reserveForm" novalidate>
-      <div class="field-row">
-        <label>Name<input type="text" name="name" required autocomplete="name"></label>
-        <label>E-Mail<input type="email" name="email" required autocomplete="email"></label>
-      </div>
-      <div class="field-row">
-        <label>Datum<input type="date" name="date" required></label>
-        <label>Uhrzeit<input type="time" name="time" required></label>
-        <label>Personen<input type="number" name="guests" min="1" max="12" value="2" required></label>
-      </div>
-      <label class="field-full">Nachricht (optional)<textarea name="message" rows="3"></textarea></label>
-      <label class="consent">
-        <input type="checkbox" name="privacy" required>
-        Ich stimme der <a href="datenschutz.html">Datenschutzerklärung</a> zu.
-      </label>
-      <button type="submit" class="btn btn--primary btn--lg">Reservierung anfragen</button>
-      <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-    </form>
-  </div>
-</section>
-
 <!-- Newsletter -->
 <section class="newsletter">
-  <h2>Verpasst nichts</h2>
-  <p>Neue Bohnen, saisonale Karten &amp; Events — einmal im Monat, kein Spam.</p>
-  <form class="newsletter__form" id="newsletterForm">
-    <input type="email" name="email" placeholder="deine@email.de" required aria-label="E-Mail-Adresse">
-    <button type="submit" class="btn btn--primary">Anmelden</button>
+  <svg class="bean-icon float" viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><ellipse cx="32" cy="32" rx="22" ry="29" fill="#EFC13A"/><path d="M32 6C19 19,19 45,32 58" stroke="#4A1210" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+  <p class="eyebrow reveal">Newsletter</p>
+  <h2 class="reveal" style="--i:1">Sign up for our newsletter for updates on new menu items and special offers.</h2>
+  <form class="newsletter__form reveal" style="--i:2" id="newsletterForm">
+    <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address">
+    <button type="submit" class="btn btn--primary">Subscribe</button>
   </form>
 </section>
 
 <!-- Footer -->
 <footer class="footer">
-  <div class="footer__col">
+  <div class="footer__card footer__card--cream">
     <p class="footer__logo">Café Mira</p>
     <p>Torstraße 12, 10119 Berlin</p>
-    <p><a href="tel:+493012345678">+49 30 123 45 678</a></p>
-    <p><a href="mailto:hallo@cafe-mira.example">hallo@cafe-mira.example</a></p>
+    <table class="hours hours--mini">
+      <tr><td>Mon – Fri</td><td>08:00 – 19:00</td></tr>
+      <tr><td>Sat – Sun</td><td>09:00 – 20:00</td></tr>
+    </table>
+    <div class="footer__social">
+      <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+    </div>
+    <p class="footer__credit">Made with care in Berlin.</p>
   </div>
-  <div class="footer__col">
-    <p class="footer__heading">Social</p>
-    <p><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></p>
-    <p><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></p>
+
+  <div class="footer__card footer__card--maroon">
+    <svg class="footer__map-deco" viewBox="0 0 64 64" width="46" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="none" stroke="#EFC13A" stroke-width="1.5" stroke-dasharray="3 4"/><path d="M32 14c-7 0-12 5-12 12 0 9 12 22 12 22s12-13 12-22c0-7-5-12-12-12Z" fill="#EFC13A"/></svg>
+    <div class="footer__col">
+      <p class="footer__heading">Pages</p>
+      <p><a href="#top">Home</a></p>
+      <p><a href="#about">About</a></p>
+      <p><a href="#menu">Menu</a></p>
+      <p><a href="#shop">Shop</a></p>
+    </div>
+    <div class="footer__col">
+      <p class="footer__heading">Explore</p>
+      <p><a href="#gallery">Gallery</a></p>
+      <p><a href="#reviews">Reviews</a></p>
+      <p><a href="#location">Location</a></p>
+      <p><a href="#contact">Reservation</a></p>
+    </div>
+    <div class="footer__col">
+      <p class="footer__heading">Legal</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p><a href="imprint.html">Imprint</a></p>
+      <p><a href="#" class="js-cookie-settings">Cookie Settings</a></p>
+    </div>
   </div>
-  <div class="footer__col">
-    <p class="footer__heading">Rechtliches</p>
-    <p><a href="impressum.html">Impressum</a></p>
-    <p><a href="datenschutz.html">Datenschutz</a></p>
-  </div>
-  <p class="footer__bottom">© 2026 Café Mira. Alle Rechte vorbehalten.</p>
+
+  <p class="footer__bottom">© 2026 Café Mira. All rights reserved.</p>
 </footer>
 
 <script src="js/main.js"></script>
