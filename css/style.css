@@ -395,24 +395,100 @@ ul{margin:0;padding:0;list-style:none;}
 }
 
 /* ============ Testimonials ============ */
-.reviews{padding:var(--section-pad) var(--gutter);background:var(--maroon);color:var(--cream);}
-.reviews .eyebrow{color:var(--gold);}
-.reviews h2{color:var(--cream);}
-.testimonial{
-  display:flex;align-items:center;gap:1.5rem;justify-content:center;
-  max-width:760px;margin:3rem auto 0;
+.reviews {
+  padding: var(--section-pad) var(--gutter);
+  background: var(--maroon);
+  color: var(--cream);
 }
-.testimonial__body{text-align:center;flex:1;}
-.testimonial__stars{color:var(--gold);letter-spacing:.2em;margin-bottom:1rem;}
-.testimonial__quote{
-  font-family:var(--font-h);font-size:1.3rem;font-style:italic;line-height:1.5;
-  transition:opacity .25s ease;
+
+.reviews .eyebrow {
+  color: var(--gold);
 }
-.testimonial__name{font-weight:600;transition:opacity .25s ease;}
-.testimonial__role{color:rgba(251,243,220,.65);font-size:.85rem;}
-.reviews .round-btn{background:transparent;border-color:rgba(251,243,220,.3);color:var(--cream);flex-shrink:0;}
-.reviews .round-btn:hover{background:var(--gold);color:var(--maroon-d);border-color:var(--gold);}
-@media(max-width:600px){.testimonial{gap:.75rem;}.testimonial__quote{font-size:1.05rem;}}
+
+.reviews h2 {
+  color: var(--cream);
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 760px;
+  margin: 3rem auto 0;
+}
+
+.testimonial__body {
+  text-align: center;
+  flex: 1;
+  
+  /* THE NUCLEAR OPTION: Lock every height property */
+  height: 220px !important; 
+  min-height: 220px !important;
+  max-height: 220px !important;
+  
+  /* Prevent larger quotes from stretching the box */
+  overflow: hidden !important; 
+  
+  /* Keep the text perfectly centered inside the locked box */
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial__stars {
+  color: var(--gold);
+  letter-spacing: .2em;
+  margin-bottom: 1rem;
+}
+
+.testimonial__quote {
+  font-family: var(--font-h);
+  font-size: 1.3rem;
+  font-style: italic;
+  line-height: 1.5;
+  transition: opacity .25s ease;
+}
+
+.testimonial__name {
+  font-weight: 600;
+  transition: opacity .25s ease;
+  margin-top: 0.5rem; /* Adds a clean gap below the quote */
+}
+
+.testimonial__role {
+  color: rgba(251,243,220,.65);
+  font-size: .85rem;
+}
+
+.reviews .round-btn {
+  background: transparent;
+  border-color: rgba(251,243,220,.3);
+  color: var(--cream);
+  flex-shrink: 0;
+}
+
+.reviews .round-btn:hover {
+  background: var(--gold);
+  color: var(--maroon-d);
+  border-color: var(--gold);
+}
+
+@media (max-width: 600px) {
+  .testimonial {
+    gap: .75rem;
+  }
+  
+  .testimonial__body {
+    /* Adjusts the fixed size slightly for smaller screens/mobile fonts */
+    min-height: 180px; 
+  }
+  
+  .testimonial__quote {
+    font-size: 1.05rem;
+  }
+}
 
 /* ============ Discover coffee ============ */
 .discover{
