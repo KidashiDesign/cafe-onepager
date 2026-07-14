@@ -73,7 +73,7 @@
 <header class="nav" id="nav">
   <a href="#top" class="nav__logo">
     <span class="nav__logo-mark">
-      <svg viewBox="0 0 48 48" width="18" height="18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/><path d="M16 10c0 2 2 2 2 4M23 10c0 2 2 2 2 4"/></svg>
+     <img src="/images/logo_cafe.svg" alt="cafe logo" style="width: 100%; max-width: 200px; height: auto; display: block;">
     </span>
     Café Mira
   </a>
@@ -107,7 +107,7 @@
       <span class="word" style="--i:6">and</span>
       <span class="word" style="--i:7">ambiance.</span>
     </h1>
-    <p class="hero__lede reveal" style="--i:1">Specialty coffee, house-made breakfast and cake — right in the middle of the city, all just for you.</p>
+    <p class="hero__lede reveal" style="--i:1">Specialty coffee, house-made breakfast and cake  right in the middle of the city, all just for you.</p>
     <div class="hero__cta reveal" style="--i:2">
       <a href="#menu" class="btn btn--primary btn--lg">Explore Our Menu</a>
       <a href="#contact" class="btn btn--ghost btn--lg">Reserve a Table</a>
@@ -118,7 +118,9 @@
 
     <div class="hero__media reveal" style="--i:4">
       <div class="hero__scene" id="heroScene">
-        <span class="steam s1"></span><span class="steam s2"></span><span class="steam s3"></span>
+        <video autoplay muted loop playsinline aria-label="Barista preparing coffee">
+          <source src="images/2649816_Barista_Preparing_1920x1080.mp4" type="video/mp4">
+        </video>
       </div>
       <button class="hero__playbtn" id="heroPlayBtn" aria-label="Pause ambience animation" aria-pressed="true">
         <svg id="iconPause" viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
@@ -159,56 +161,74 @@
 
     <div class="menu__grid">
       <div class="menu-card reveal" style="--i:0">
-        <span class="menu-card__icon"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/></svg></span>
+        <span class="menu-card__icon"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 36C18.1 36 14.792 34.642 12.076 31.926C9.36001 29.21 8.00134 25.9013 8.00001 22V10C8.00001 8.9 8.39201 7.95867 9.17601 7.176C9.96001 6.39333 10.9013 6.00133 12 6H37C38.9333 6 40.5833 6.68333 41.95 8.05C43.3167 9.41667 44 11.0667 44 13C44 14.9333 43.3167 16.5833 41.95 17.95C40.5833 19.3167 38.9333 20 37 20H36V22C36 25.9 34.642 29.2087 31.926 31.926C29.21 34.6433 25.9013 36.0013 22 36ZM12 16H32V10H12V16ZM36 16H37C37.8333 16 38.542 15.7087 39.126 15.126C39.71 14.5433 40.0013 13.8347 40 13C39.9987 12.1653 39.7073 11.4573 39.126 10.876C38.5447 10.2947 37.836 10.0027 37 10H36V16ZM10 42C9.43334 42 8.95867 41.808 8.57601 41.424C8.19334 41.04 8.00134 40.5653 8.00001 40C7.99867 39.4347 8.19067 38.96 8.57601 38.576C8.96134 38.192 9.43601 38 10 38H38C38.5667 38 39.042 38.192 39.426 38.576C39.81 38.96 40.0013 39.4347 40 40C39.9987 40.5653 39.8067 41.0407 39.424 41.426C39.0413 41.8113 38.5667 42.0027 38 42H10Z" fill="#FBF3DC"/>
+</svg></span>
         <span class="menu-card__body">
           <span class="menu-card__top"><span class="menu-card__name">Cold Brew</span><span class="menu-card__price">€4.80</span></span>
           <span class="menu-card__desc">Steeped slow for 18 hours, silky smooth</span>
         </span>
       </div>
       <div class="menu-card reveal" style="--i:1">
-        <span class="menu-card__icon menu-card__icon--food"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><path d="M16 16v8M20 16v8M16 20h4M24 32V16M24 16c3 0 5 2 5 5s-2 5-5 5"/></svg></span>
+        <span class="menu-card__icon menu-card__icon--food"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M30.3195 4.02004C29.8585 3.93737 29.3832 4.02251 28.9795 4.26004L4.99953 18.28C4.99953 18.28 4.83953 18.42 4.73953 18.48C4.67953 18.54 4.59953 18.58 4.53953 18.64C4.39953 18.8 4.27953 18.96 4.19953 19.16C4.19953 19.18 4.15953 19.2 4.15953 19.24C4.05953 19.46 4.01953 19.7 4.01953 19.96V40.02C4.01953 41.12 4.91953 42.02 6.01953 42.02H42.0195C43.1195 42.02 44.0195 41.12 44.0195 40.02V20.02C44.0195 9.18004 35.0795 4.84004 30.3395 4.04004L30.3195 4.02004ZM12.9995 36C11.3395 36 9.99953 34.66 9.99953 33C9.99953 31.34 11.3395 30 12.9995 30C14.6595 30 15.9995 31.34 15.9995 33C15.9995 34.66 14.6595 36 12.9995 36ZM22.9995 30C21.3395 30 19.9995 28.66 19.9995 27C19.9995 25.34 21.3395 24 22.9995 24C24.6595 24 25.9995 25.34 25.9995 27C25.9995 28.66 24.6595 30 22.9995 30ZM33.9995 36C31.7995 36 29.9995 34.2 29.9995 32C29.9995 29.8 31.7995 28 33.9995 28C36.1995 28 37.9995 29.8 37.9995 32C37.9995 34.2 36.1995 36 33.9995 36ZM13.3995 18L30.3395 8.12004C32.4595 8.66004 38.8395 10.82 39.8595 18H13.3995Z" fill="#FBF3DC"/>
+  </svg></span>
         <span class="menu-card__body">
           <span class="menu-card__top"><span class="menu-card__name">Grilled Cheese</span><span class="menu-card__price">€6.50</span></span>
           <span class="menu-card__desc">Melted cheese on toasted sourdough</span>
         </span>
-      </div>
+      </div>    
       <div class="menu-card reveal" style="--i:2">
-        <span class="menu-card__icon menu-card__icon--food"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><path d="M16 16v8M20 16v8M16 20h4M24 32V16M24 16c3 0 5 2 5 5s-2 5-5 5"/></svg></span>
+        <span class="menu-card__icon menu-card__icon--food"><svg width="25" height="25" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.625 18.5V23.125H37V18.5M4.625 27.75V32.375H37V27.75M0 37V13.875L9.25 4.625L37 13.875V37" fill="#FBF3DC"/>
+</svg></span>
         <span class="menu-card__body">
           <span class="menu-card__top"><span class="menu-card__name">Chocolate Cake</span><span class="menu-card__price">€5.20</span></span>
           <span class="menu-card__desc">Rich, moist, and unapologetically chocolatey</span>
         </span>
       </div>
       <div class="menu-card reveal" style="--i:3">
-        <span class="menu-card__icon"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/></svg></span>
+        <span class="menu-card__icon"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 36C18.1 36 14.792 34.642 12.076 31.926C9.36001 29.21 8.00134 25.9013 8.00001 22V10C8.00001 8.9 8.39201 7.95867 9.17601 7.176C9.96001 6.39333 10.9013 6.00133 12 6H37C38.9333 6 40.5833 6.68333 41.95 8.05C43.3167 9.41667 44 11.0667 44 13C44 14.9333 43.3167 16.5833 41.95 17.95C40.5833 19.3167 38.9333 20 37 20H36V22C36 25.9 34.642 29.2087 31.926 31.926C29.21 34.6433 25.9013 36.0013 22 36ZM12 16H32V10H12V16ZM36 16H37C37.8333 16 38.542 15.7087 39.126 15.126C39.71 14.5433 40.0013 13.8347 40 13C39.9987 12.1653 39.7073 11.4573 39.126 10.876C38.5447 10.2947 37.836 10.0027 37 10H36V16ZM10 42C9.43334 42 8.95867 41.808 8.57601 41.424C8.19334 41.04 8.00134 40.5653 8.00001 40C7.99867 39.4347 8.19067 38.96 8.57601 38.576C8.96134 38.192 9.43601 38 10 38H38C38.5667 38 39.042 38.192 39.426 38.576C39.81 38.96 40.0013 39.4347 40 40C39.9987 40.5653 39.8067 41.0407 39.424 41.426C39.0413 41.8113 38.5667 42.0027 38 42H10Z" fill="#FBF3DC"/>
+</svg></span>
         <span class="menu-card__body">
           <span class="menu-card__top"><span class="menu-card__name">Flat White</span><span class="menu-card__price">€4.20</span></span>
           <span class="menu-card__desc">Velvety microfoam over double espresso</span>
         </span>
       </div>
       <div class="menu-card reveal" style="--i:4">
-        <span class="menu-card__icon"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/></svg></span>
+        <span class="menu-card__icon"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 36C18.1 36 14.792 34.642 12.076 31.926C9.36001 29.21 8.00134 25.9013 8.00001 22V10C8.00001 8.9 8.39201 7.95867 9.17601 7.176C9.96001 6.39333 10.9013 6.00133 12 6H37C38.9333 6 40.5833 6.68333 41.95 8.05C43.3167 9.41667 44 11.0667 44 13C44 14.9333 43.3167 16.5833 41.95 17.95C40.5833 19.3167 38.9333 20 37 20H36V22C36 25.9 34.642 29.2087 31.926 31.926C29.21 34.6433 25.9013 36.0013 22 36ZM12 16H32V10H12V16ZM36 16H37C37.8333 16 38.542 15.7087 39.126 15.126C39.71 14.5433 40.0013 13.8347 40 13C39.9987 12.1653 39.7073 11.4573 39.126 10.876C38.5447 10.2947 37.836 10.0027 37 10H36V16ZM10 42C9.43334 42 8.95867 41.808 8.57601 41.424C8.19334 41.04 8.00134 40.5653 8.00001 40C7.99867 39.4347 8.19067 38.96 8.57601 38.576C8.96134 38.192 9.43601 38 10 38H38C38.5667 38 39.042 38.192 39.426 38.576C39.81 38.96 40.0013 39.4347 40 40C39.9987 40.5653 39.8067 41.0407 39.424 41.426C39.0413 41.8113 38.5667 42.0027 38 42H10Z" fill="#FBF3DC"/>
+</svg></span>
         <span class="menu-card__body">
           <span class="menu-card__top"><span class="menu-card__name">Espresso</span><span class="menu-card__price">€3.20</span></span>
           <span class="menu-card__desc">Our house blend, deep and bold</span>
         </span>
       </div>
       <div class="menu-card reveal" style="--i:5">
-        <span class="menu-card__icon"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M10 20h22v10a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11V20Z"/><path d="M32 22h3a5 5 0 0 1 0 10h-3"/></svg></span>
+        <span class="menu-card__icon"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 36C18.1 36 14.792 34.642 12.076 31.926C9.36001 29.21 8.00134 25.9013 8.00001 22V10C8.00001 8.9 8.39201 7.95867 9.17601 7.176C9.96001 6.39333 10.9013 6.00133 12 6H37C38.9333 6 40.5833 6.68333 41.95 8.05C43.3167 9.41667 44 11.0667 44 13C44 14.9333 43.3167 16.5833 41.95 17.95C40.5833 19.3167 38.9333 20 37 20H36V22C36 25.9 34.642 29.2087 31.926 31.926C29.21 34.6433 25.9013 36.0013 22 36ZM12 16H32V10H12V16ZM36 16H37C37.8333 16 38.542 15.7087 39.126 15.126C39.71 14.5433 40.0013 13.8347 40 13C39.9987 12.1653 39.7073 11.4573 39.126 10.876C38.5447 10.2947 37.836 10.0027 37 10H36V16ZM10 42C9.43334 42 8.95867 41.808 8.57601 41.424C8.19334 41.04 8.00134 40.5653 8.00001 40C7.99867 39.4347 8.19067 38.96 8.57601 38.576C8.96134 38.192 9.43601 38 10 38H38C38.5667 38 39.042 38.192 39.426 38.576C39.81 38.96 40.0013 39.4347 40 40C39.9987 40.5653 39.8067 41.0407 39.424 41.426C39.0413 41.8113 38.5667 42.0027 38 42H10Z" fill="#FBF3DC"/>
+</svg></span>
         <span class="menu-card__body">
           <span class="menu-card__top"><span class="menu-card__name">Matcha Latte</span><span class="menu-card__price">€4.80</span></span>
           <span class="menu-card__desc">Ceremonial-grade matcha, whisked to order</span>
         </span>
       </div>
       <div class="menu-card reveal" style="--i:6">
-        <span class="menu-card__icon menu-card__icon--food"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><path d="M16 16v8M20 16v8M16 20h4M24 32V16M24 16c3 0 5 2 5 5s-2 5-5 5"/></svg></span>
+        <span class="menu-card__icon menu-card__icon--food"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.6166 11.5992C17.3552 10.2337 18.4578 9.09972 19.8019 8.32297C21.146 7.54623 22.679 7.15714 24.2309 7.19891C25.7827 7.24067 27.2926 7.71166 28.593 8.55958C29.8933 9.4075 30.9333 10.5992 31.5974 12.0024C29.8492 12.0417 28.1504 12.5895 26.7085 13.5788C25.2666 14.568 24.1441 15.9559 23.4782 17.5728C22.8633 16.5499 22.1277 15.6047 21.287 14.7576C19.9349 13.4298 18.3523 12.3596 16.6166 11.5992ZM40.7822 21.6C40.795 21.4016 40.8014 21.2016 40.8014 21C40.8022 19.0499 40.1696 17.1522 38.9988 15.5927C37.8279 14.0332 36.1823 12.8962 34.3094 12.3528C33.6625 10.3034 32.4192 8.49351 30.7384 7.15441C29.0576 5.81531 27.0157 5.00784 24.8736 4.83521C22.7315 4.66259 20.5867 5.13266 18.7131 6.18533C16.8396 7.23799 15.3225 8.82544 14.3558 10.7448C13.4011 10.4476 12.4288 10.2103 11.4446 10.0344C9.77986 9.73529 8.09116 9.58988 6.3998 9.59996L5.9582 9.61436H5.9486C5.65503 9.6315 5.37797 9.75585 5.17003 9.96379C4.96209 10.1717 4.83774 10.4488 4.8206 10.7424V10.7448L4.8014 11.196C4.79008 12.8896 4.93469 14.5808 5.2334 16.248C5.5286 17.8848 6.0278 19.7616 6.8774 21.6H6.0014C5.68314 21.6 5.37791 21.7264 5.15287 21.9514C4.92783 22.1765 4.8014 22.4817 4.8014 22.8V24C4.8014 25.656 5.0126 27.264 5.4062 28.8H42.5966C42.9998 27.2319 43.203 25.6191 43.2014 24V22.8C43.2014 22.4817 43.075 22.1765 42.8499 21.9514C42.6249 21.7264 42.3197 21.6 42.0014 21.6H40.7822ZM9.563 21.6C8.5214 19.7232 7.9262 17.6664 7.595 15.8208C7.36864 14.5605 7.23866 13.2848 7.2062 12.0048L7.4798 12.0144C8.3726 12.0456 9.6158 12.1416 11.0174 12.396C13.8494 12.9072 17.1758 14.04 19.5902 16.4544C21.0686 17.9328 22.0694 19.7568 22.7414 21.6H18.5006L14.051 17.1504C13.9394 17.0389 13.807 16.9506 13.6613 16.8904C13.5156 16.8301 13.3594 16.7992 13.2017 16.7993C13.0441 16.7994 12.888 16.8306 12.7423 16.891C12.5967 16.9515 12.4644 17.04 12.353 17.1516C12.2416 17.2631 12.1532 17.3956 12.093 17.5413C12.0328 17.687 12.0018 17.8431 12.0019 18.0008C12.002 18.1585 12.0332 18.3146 12.0937 18.4602C12.1541 18.6058 12.2426 18.7381 12.3542 18.8496L15.107 21.6H9.563ZM25.2782 21.6L25.2134 21.4056C25.1612 20.5001 25.2961 19.5936 25.6098 18.7427C25.9235 17.8917 26.4092 17.1145 27.0366 16.4596C27.664 15.8048 28.4197 15.2862 29.2564 14.9363C30.0932 14.5865 30.9931 14.4128 31.8999 14.4262C32.8067 14.4396 33.7011 14.6398 34.5271 15.0142C35.3532 15.3886 36.0932 15.9292 36.701 16.6024C37.3088 17.2755 37.7714 18.0667 38.0598 18.9265C38.3482 19.7864 38.4563 20.6965 38.3774 21.6H25.2782ZM24.0014 43.2C20.1761 43.2008 16.4377 42.059 13.2657 39.921C10.0937 37.7829 7.63268 34.7461 6.1982 31.2H41.807C40.3724 34.7465 37.9109 37.7836 34.7385 39.9216C31.566 42.0597 27.8271 43.2013 24.0014 43.2Z" fill="#FBF3DC"/>
+</svg>  </span>
         <span class="menu-card__body">
           <span class="menu-card__top"><span class="menu-card__name">Caesar Salad</span><span class="menu-card__price">€7.90</span></span>
           <span class="menu-card__desc">Crisp romaine, parmesan, house dressing</span>
         </span>
       </div>
       <div class="menu-card reveal" style="--i:7">
-        <span class="menu-card__icon menu-card__icon--food"><svg viewBox="0 0 48 48" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="24" cy="24" r="14"/><path d="M16 16v8M20 16v8M16 20h4M24 32V16M24 16c3 0 5 2 5 5s-2 5-5 5"/></svg></span>
+        <span class="menu-card__icon menu-card__icon--food"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.00014 29.0001C7.00014 29.0001 6.95614 32.7481 8.45614 37.2481C9.32914 39.8641 10.3701 41.4671 11.6791 42.2511C13.3561 43.2561 15.0761 41.2711 16.0581 39.5811C17.0201 37.9241 18.4331 36.2281 19.5481 35.0001M33.0001 7.91113C35.6231 8.35113 38.5321 8.91713 39.6261 9.41913C41.0521 10.0731 42.4861 11.4051 43.0571 12.8301C43.5881 14.1541 42.2101 15.1701 40.9641 15.8641C39.5591 16.6471 38.0951 17.8741 36.8991 19.0001" stroke="#FBF3DC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.2034 29.776L21.7014 31.513C21.2438 31.8308 20.8848 32.2709 20.6654 32.783C20.3562 33.5047 19.7738 34.0745 19.0456 34.368C18.3174 34.6614 17.5026 34.6546 16.7794 34.349L8.80442 30.98C8.0961 30.6808 7.532 30.1178 7.2315 29.41C6.93101 28.7023 6.91771 27.9054 7.19441 27.188L7.64442 26.019C8.52353 23.736 10.1322 21.8074 12.2204 20.533M30.7214 24.508L32.1114 23.004L33.0234 22.017C33.3383 21.6758 33.7217 21.4049 34.1484 21.222C34.921 20.8909 35.5385 20.2779 35.8751 19.5077C36.2118 18.7375 36.2423 17.8679 35.9604 17.076L33.1084 9.066C32.8787 8.42032 32.4199 7.88146 31.8192 7.55168C31.2184 7.2219 30.5175 7.12415 29.8494 7.277L28.6314 7.556C25.9768 8.1629 23.6495 9.75018 22.1154 12" stroke="#FBF3DC" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.4101 23.0791C12.6221 22.5144 12.0784 21.6711 11.8896 20.7202C11.7007 19.7693 11.8807 18.7821 12.3931 17.9591C13.9428 15.4658 16.0493 13.3656 18.5471 11.8231C19.3542 11.325 20.3183 11.1467 21.2502 11.3232C22.182 11.4998 23.0141 12.0184 23.5831 12.7771L29.5151 20.6861C29.8374 21.1158 30.0698 21.6059 30.1986 22.1273C30.3273 22.6487 30.3498 23.1907 30.2646 23.7209C30.1794 24.2512 29.9883 24.7588 29.7026 25.2137C29.417 25.6685 29.0427 26.0611 28.6021 26.3681L28.3621 26.5351C28.0611 26.7451 27.7901 26.9951 27.5581 27.2781L26.8741 28.1101C26.2303 28.8939 25.3129 29.4038 24.3074 29.5368C23.3019 29.6697 22.2834 29.4157 21.4581 28.8261L13.4101 23.0791Z" stroke="#FBF3DC" stroke-width="4"/>
+</svg></span>
         <span class="menu-card__body">
           <span class="menu-card__top"><span class="menu-card__name">Almond Croissant</span><span class="menu-card__price">€4.40</span></span>
           <span class="menu-card__desc">Buttery layers, filled with almond cream</span>
@@ -222,7 +242,7 @@
 
 <!-- About -->
 <section class="about" id="about">
-  <div class="about__media reveal" aria-hidden="true"></div>
+  <img src="images/about-photo.jpg" alt="About our café" class="about__media">
   <div class="about__text">
     <p class="eyebrow reveal">Our Story</p>
     <h2 class="reveal" style="--i:1">A home for coffee lovers</h2>
@@ -250,21 +270,21 @@
 
   <div class="events__track" id="eventsTrack">
     <article class="event-card reveal" style="--i:0">
-      <div class="event-card__media"></div>
+      <img src="images/post1.jpg" alt="About our café" class="about__media">
       <p class="event-card__date">Sat, Aug 8, 2026</p>
       <h3>Coffee Art Workshop</h3>
       <p>Learn the basics of latte art with our head barista over a relaxed morning session.</p>
       <a href="#contact" class="link-arrow">Learn more →</a>
     </article>
     <article class="event-card reveal" style="--i:1">
-      <div class="event-card__media event-card__media--b"></div>
+      <img src="images/post2.jpg" alt="About our café" class="about__media">
       <p class="event-card__date">Fri, Aug 14, 2026</p>
       <h3>Live Music Friday</h3>
       <p>Acoustic sessions from local artists, every second Friday of the month.</p>
       <a href="#contact" class="link-arrow">Learn more →</a>
     </article>
     <article class="event-card reveal" style="--i:2">
-      <div class="event-card__media event-card__media--c"></div>
+      <img src="images/post3.jpg" alt="About our café" class="about__media">
       <p class="event-card__date">Fri, Aug 21, 2026</p>
       <h3>Community Open Mic</h3>
       <p>Bring a poem, a song, or just your best listening ears.</p>
@@ -273,9 +293,9 @@
   </div>
 
   <div class="stats">
-    <div class="stats__item reveal" style="--i:0"><strong>12K</strong><span>Happy Customers</span></div>
-    <div class="stats__item reveal" style="--i:1"><strong>7+</strong><span>Years of Service</span></div>
-    <div class="stats__item reveal" style="--i:2"><strong>100+</strong><span>Daily Visitors</span></div>
+    <div class="stats__item reveal" style="--i:0"><strong class="stats__counter" data-target="12">0</strong><span>K Happy Customers</span></div>
+    <div class="stats__item reveal" style="--i:1"><strong class="stats__counter" data-target="7">0</strong><span>+ Years of Service</span></div>
+    <div class="stats__item reveal" style="--i:2"><strong class="stats__counter" data-target="100">0</strong><span>+ Daily Visitors</span></div>
   </div>
 </section>
 
@@ -284,11 +304,11 @@
   <p class="eyebrow center reveal">Gallery</p>
   <h2 class="center reveal" style="--i:1">A look inside the café</h2>
   <div class="gallery__row">
-    <div class="gallery__item gallery__item--a reveal" style="--i:0"></div>
-    <div class="gallery__item gallery__item--b reveal" style="--i:1"></div>
-    <div class="gallery__item gallery__item--c reveal" style="--i:2"></div>
-    <div class="gallery__item gallery__item--d reveal" style="--i:3"></div>
-    <div class="gallery__item gallery__item--e reveal" style="--i:4"></div>
+    <img src="images/inside1.jpg" alt="Interior of Café Mira" class="gallery__item gallery__item--a reveal" style="--i:0">
+    <img src="images/inside2.jpg" alt="Coffee bar at Café Mira" class="gallery__item gallery__item--b reveal" style="--i:1">
+    <img src="images/inside3.jpg" alt="Breakfast setup at Café Mira" class="gallery__item gallery__item--c reveal" style="--i:2">
+    <img src="images/inside4.jpg" alt="Cake display at Café Mira" class="gallery__item gallery__item--d reveal" style="--i:3">
+    <img src="images/inside5.jpg" alt="Seating area at Café Mira" class="gallery__item gallery__item--e reveal" style="--i:4">
   </div>
 </section>
 
@@ -298,7 +318,7 @@
   <h2 class="center reveal" style="--i:1">312 reviews, 4.8★ on average</h2>
   <div class="testimonial">
     <button class="round-btn" id="testimonialPrev" aria-label="Previous review">‹</button>
-    <div class="testimonial__body">
+    <div class="testimonial__body"> 
       <p class="testimonial__stars">★★★★★</p>
       <p class="testimonial__quote" id="testimonialQuote">"Café Mira has become my go-to spot for my daily coffee fix. The espresso is consistently rich and flavorful, and the baristas are true artists."</p>
       <p class="testimonial__name" id="testimonialName">— Sarah M.</p>
@@ -310,21 +330,30 @@
 
 <!-- Discover our coffee -->
 <section class="discover">
-  <div class="discover__media reveal" aria-hidden="true"></div>
+  <a href="https://www.google.com/maps/place/Caf%C3%A9+Mira/data=!4m2!3m1!1s0x0:0xeabbf9cbfc2d0c7b?sa=X&ved=1t:2428&ictx=111" target="_blank" rel="noopener" class="discover__media reveal" aria-label="Open Café Mira on Google Maps">
+    <img src="images/inside1.jpg" alt="Café Mira location" style="width:100%;height:100%;object-fit:cover;display:block;">
+  </a>
   <div class="discover__text">
     <p class="eyebrow reveal">Behind the counter</p>
     <h2 class="reveal" style="--i:1">Discover our coffee</h2>
     <ul class="feature-list">
       <li class="reveal" style="--i:2">
-        <span class="feature-list__icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21c6-1 9-4 9-10S10 3 4 3c0 8 2 13 0 18Z"/></svg></span>
+        <span class="feature-list__icon"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M38 28.0001L36.392 39.2521C36.252 40.2261 36.184 40.7141 35.948 41.0821C35.7406 41.4047 35.4449 41.6609 35.096 41.8201C34.702 42.0001 34.21 42.0001 33.23 42.0001H28M38 28.0001H28M38 28.0001C40.606 26.7921 42 23.5281 42 20.6681C42 17.5961 39.94 14.9681 37.02 13.8741C36.7232 13.7617 36.4672 13.5624 36.2852 13.3024C36.1033 13.0423 36.0039 12.7335 36 12.4161C36 9.88612 33.76 7.83412 31 7.83412C30.5467 7.83412 30.1107 7.88678 29.692 7.99212C28.828 8.20612 27.862 8.15812 27.118 7.70212C25.2754 6.57968 23.1575 5.99049 21 6.00012C14.924 6.00012 10 10.5141 10 16.0841C10 16.7881 9.54 17.4321 8.886 17.7981C7.156 18.7601 6 20.5081 6 22.5001C6 25.0541 7.424 27.3801 10 28.0001M28 42.0001V28.0001M28 42.0001H20M28 28.0001H20M10 28.0001L11.608 39.2521V39.2561C11.748 40.2281 11.816 40.7161 12.052 41.0821C12.2594 41.4047 12.5551 41.6609 12.904 41.8201C13.298 42.0001 13.79 42.0001 14.77 42.0001H20M10 28.0001H20M20 42.0001V28.0001" stroke="#4A1211" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
         <span><strong>Local Ingredients</strong><br>Produce and dairy sourced from small farms within 100km of Berlin.</span>
       </li>
       <li class="reveal" style="--i:3">
-        <span class="feature-list__icon"><svg viewBox="0 0 64 64" width="18" height="18" aria-hidden="true"><ellipse cx="32" cy="32" rx="20" ry="27" fill="currentColor"/></svg></span>
+        <span class="feature-list__icon"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.3439 43.8299C16.0846 44.5342 11.3205 43.1205 8.09959 39.8996C4.87873 36.6787 3.46497 31.9146 4.1693 26.6553C4.87364 21.396 7.63839 16.0723 11.8553 11.8553C16.0723 7.63839 21.396 4.87364 26.6553 4.1693C31.9146 3.46497 36.6787 4.87873 39.8996 8.09959C43.1205 11.3205 44.5342 16.0846 43.8299 21.3439C43.1255 26.6032 40.3608 31.9269 36.1439 36.1439C31.9269 40.3608 26.6032 43.1255 21.3439 43.8299Z" stroke="#4A1211" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M39.5982 8.39941C39.9982 27.9994 7.99825 19.9994 8.39825 39.5994" stroke="#4A1211" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span>
         <span><strong>Crafted Coffee</strong><br>Beans roasted in-house every week for peak freshness.</span>
       </li>
       <li class="reveal" style="--i:4">
-        <span class="feature-list__icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M2 8.5a15 15 0 0 1 20 0"/><path d="M5.5 12a10 10 0 0 1 13 0"/><path d="M9 15.5a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1" fill="currentColor" stroke="none"/></svg></span>
+        <span class="feature-list__icon"><svg width="25" height="25" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.45 40.55C19.4833 39.5833 19 38.4 19 37C19 35.6 19.4833 34.4167 20.45 33.45C21.4167 32.4833 22.6 32 24 32C25.4 32 26.5833 32.4833 27.55 33.45C28.5167 34.4167 29 35.6 29 37C29 38.4 28.5167 39.5833 27.55 40.55C26.5833 41.5167 25.4 42 24 42C22.6 42 21.4167 41.5167 20.45 40.55ZM12.7 30.7L8.5 26.4C10.4667 24.4333 12.7753 22.8753 15.426 21.726C18.0767 20.5767 20.9347 20.0013 24 20C27.0653 19.9987 29.924 20.582 32.576 21.75C35.228 22.918 37.536 24.5013 39.5 26.5L35.3 30.7C33.8333 29.2333 32.1333 28.0833 30.2 27.25C28.2667 26.4167 26.2 26 24 26C21.8 26 19.7333 26.4167 17.8 27.25C15.8667 28.0833 14.1667 29.2333 12.7 30.7ZM4.2 22.2L0 18C3.06667 14.8667 6.65 12.4167 10.75 10.65C14.85 8.88333 19.2667 8 24 8C28.7333 8 33.15 8.88333 37.25 10.65C41.35 12.4167 44.9333 14.8667 48 18L43.8 22.2C41.2333 19.6333 38.2587 17.6253 34.876 16.176C31.4933 14.7267 27.868 14.0013 24 14C20.132 13.9987 16.5073 14.724 13.126 16.176C9.74467 17.628 6.76933 19.636 4.2 22.2Z" fill="#4A1211"/>
+</svg></span>
         <span><strong>Free Wi-Fi</strong><br>Stay a while — fast, free Wi-Fi at every table.</span>
       </li>
     </ul>
@@ -337,7 +366,7 @@
 
 <!-- Reservation -->
 <section class="contact" id="contact">
-  <div class="contact__media reveal" aria-hidden="true"></div>
+  
   <div class="contact__form-wrap">
     <p class="eyebrow reveal">Reservation</p>
     <h2 class="reveal" style="--i:1">Make a Reservation</h2>
@@ -360,6 +389,9 @@
       <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
     </form>
   </div>
+  <div class="contact__media reveal" aria-hidden="true">
+    <img src="images/reservation.jpg" alt="Reservation at Café Mira" style="width:100%;height:100%;object-fit:cover;display:block;">
+  </div>
 </section>
 
 <!-- Signature items / shop -->
@@ -368,22 +400,32 @@
   <h2 class="center reveal" style="--i:1">Our signature items</h2>
   <div class="shop__grid">
     <div class="shop-card reveal" style="--i:0">
-      <div class="shop-card__media"></div>
+      <div class="shop-card__media">
+        <img src="images/blend.jpeg" alt="Signature Ground Coffee">
+      </div>
       <h3>Signature Ground Coffee</h3>
       <p class="shop-card__price">€14.90</p>
     </div>
     <div class="shop-card reveal" style="--i:1">
-      <div class="shop-card__media shop-card__media--b"><span class="badge">Sale 15%</span></div>
+      <div class="shop-card__media shop-card__media--b">
+        <img src="images/Decaf.jpeg" alt="Decaf Blend">
+        <span class="badge">Sale 15%</span>
+      </div>
       <h3>Decaf Blend</h3>
       <p class="shop-card__price"><span class="was">€15.90</span> €13.50</p>
     </div>
     <div class="shop-card reveal" style="--i:2">
-      <div class="shop-card__media shop-card__media--c"></div>
+      <div class="shop-card__media shop-card__media--c">
+        <img src="images/beans.jpeg" alt="Espresso Beans">
+      </div>
       <h3>Espresso Beans</h3>
       <p class="shop-card__price">€16.90</p>
     </div>
     <div class="shop-card reveal" style="--i:3">
-      <div class="shop-card__media shop-card__media--d"><span class="badge badge--gold">Best Pick</span></div>
+      <div class="shop-card__media shop-card__media--d">
+        <img src="images/chai.jpeg" alt="Homemade Chai Mix">
+        <span class="badge badge--gold">Best Pick</span>
+      </div>
       <h3>Homemade Chai Mix</h3>
       <p class="shop-card__price">€10.90</p>
     </div>

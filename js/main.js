@@ -58,13 +58,24 @@
   var playBtn = document.getElementById('heroPlayBtn');
   var iconPause = document.getElementById('iconPause');
   var iconPlay = document.getElementById('iconPlay');
+  var heroVideo = scene ? scene.querySelector('video') : null;
   if (playBtn) {
     playBtn.addEventListener('click', function () {
       var paused = scene.classList.toggle('paused');
       playBtn.setAttribute('aria-pressed', String(!paused));
       iconPause.hidden = paused;
       iconPlay.hidden = !paused;
+      if (heroVideo) {
+        if (paused) {
+          heroVideo.pause();
+        } else {
+          heroVideo.play().catch(function () {});
+        }
+      }
     });
+  }
+  if (heroVideo) {
+    heroVideo.play().catch(function () {});
   }
 
   // Events horizontal scroller
@@ -151,4 +162,36 @@
       nl.appendChild(note);
     }
   });
+
+  // Stats counter animation
+  var counters = document.querySelectorAll('.stats__counter');
+  if ('IntersectionObserver' in window && counters.length > 0) {
+    var counterObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var target = parseInt(entry.target.getAttribute('data-target'), 10);
+          var element = entry.target;
+          var current = 0;
+          var duration = 1200;
+          var startTime = performance.now();
+          
+          function animate(now) {
+            var elapsed = now - startTime;
+            var progress = Math.min(elapsed / duration, 1);
+            current = Math.floor(progress * target);
+            element.textContent = current;
+            
+            if (progress < 1) {
+              requestAnimationFrame(animate);
+            } else {
+              element.textContent = target;
+            }
+          }
+          
+          requestAnimationFrame(animate);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(function (counter) { counterObserver.observe(counter); });
+  }
 })();
